@@ -84,7 +84,8 @@ FROM [dbo].[LITA Capstone Dataset]
 GROUP BY [Product_Category]
 ORDER BY [Total_Sales] DESC;
 ```
-Result
+**Result**
+
 ![Sales by Product](https://github.com/user-attachments/assets/ea6f26fe-b06f-46ce-9c00-bfd097a7dabd)
 
 
@@ -94,7 +95,8 @@ SELECT Region, COUNT(OrderID) AS Transaction_Count
 FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Region;
 ```
-Result
+**Result**
+
 ![Trans_count](https://github.com/user-attachments/assets/3f6bed5c-03cd-4d35-b4d8-74850e1f773a)
 
 
@@ -106,19 +108,20 @@ FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Product_Category
 ORDER BY Highest_Selling_Product DESC;
 ```
-Result
+**Result**
+
 ![Highest_selling_product](https://github.com/user-attachments/assets/ac857086-fd9f-4e17-8945-94bce29d95e6)
 
 
 ##### Total Revenue per product
-
 ```SQL
 SELECT Product_Category, SUM(Sales_Amount) 
 AS Total_Revenue
 FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Product_Category;
 ```
-Result
+**Result**
+
 ![RevenueByProduct](https://github.com/user-attachments/assets/9ac18baf-d9fd-421f-a0e0-203998d21fa3)
 
 
@@ -131,7 +134,9 @@ WHERE YEAR(OrderDate) = YEAR(GETDATE())  -- Current year
 GROUP BY MONTH(OrderDate)
 ORDER BY SalesMonth ASC;
 ```
-Result
+**Result**
+
+![Monthly Total](https://github.com/user-attachments/assets/6013553c-6ec9-401b-a731-72bd10727b48)
 
 
 ##### Top 5 Customers by Total Purchase
@@ -142,7 +147,8 @@ FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Customer_Id
 ORDER BY Total_Purchase DESC;
 ```
-Result
+**Result**
+
 ![Top 5 Customer](https://github.com/user-attachments/assets/1ecef205-6a7e-4c1e-9549-1544ade1dd23)
 
 
@@ -153,7 +159,8 @@ SELECT Region, (SUM(Sales_Amount) * 100.0 /
 FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Region;
 ```
-Result
+**Result**
+
 ![PercentageByRegion](https://github.com/user-attachments/assets/ba346095-3c5f-4ebb-b129-e053cef432cb)
 
 
@@ -165,8 +172,6 @@ WHERE OrderDate < DATEADD(QUARTER, -1, GETDATE())
 GROUP BY Product_Category
 HAVING SUM(Sales_Amount) = 0;
 ```
-Result
-
 
 ### POWERBI
 - Data Loading
