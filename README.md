@@ -9,7 +9,7 @@ The report gives an analysis of Sales Data, using pivot tables and some Excel fo
 Using Pivot Table I summarized the SalesData under the following:
 
 ### Total Sales by Product
-
+The Total Sales by Product summary reveals that the total sales for Shoes for the two years is (3,087,500), total sales for Shirt is (2,450,000), total sales for Hat is (1,587,000), total sales for Gloves is (1,500,000), total sales for Jacket is (1,050,000), total sales for Socks is (912,500) which gives the Grand Total 
 
 ### SQL Analysis
 ### PowerBI Analysis
