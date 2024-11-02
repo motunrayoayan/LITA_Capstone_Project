@@ -32,6 +32,20 @@ This is the project given by Ladies in Tech to showcase all we have learnt durin
 
 [Data Visualization in PowerBI](#data-visualization-in-powerbi)
 
+---
+[PROJECT 2: CUSTOMER SEGMENTATION FOR A SUBSCRIPTION SERVICE](#project-2:-customer-segmentation-for-a-subscription-service)
+
+[Project Overview for Project 2](#project-overview-for-project-2)
+
+[Data Analysis for Excel Customer Data](#data-analysis-for-excel-customer-data)
+
+[Querying of Customer Data Subscription Service to gain insights](#querying-of-customer-data-subscription-service-to-gain-insights)
+
+[Data Loading in PowerBI Project 2](#data-loading-in-powerbi-project-2)
+
+[Data Visualization in PowerBI Project 2](#data-visualization-in-powerbi-project-2)
+
+[Conclusion for Customer Data](#conclusion-for-customer-data)
 
 
 ### Project Overview
@@ -58,7 +72,7 @@ The Primary Source of Data used is SalesData.csv and CustomerData.csv which was 
 ---
 I went through the data set to make sure there are no missing values or duplicated values.
 
-### Data Analysis for Excel
+### Data Analysis for Excel 
 ---
 Some Excel formulars are used to calculated some values and Pivot Table for summarizing the SaleData. All these were carried out under the following: 
 
@@ -241,7 +255,7 @@ This project involves analyzing customer data for a subscription service to iden
 ---
 I went through the data set to make sure there are no missing values or duplicated values.
 
-### Data Analysis for Excel
+### Data Analysis for Excel Customer Data
 ---
 Some Excel formulars are used to calculated some values and Pivot Table for summarizing the CustomerData. The following insights are derived from the dataset; 
 
@@ -272,7 +286,7 @@ Using the Canceled and Revenue column, the analysis shows that we have **82,346,
 
 ![Subscription can ren](https://github.com/user-attachments/assets/9931fa2a-8d25-4a6f-b84d-4077c2be56bd)
 
-### STRUCTURED QUERY LANGUAGE
+### STRUCTURED QUERY LANGUAGE 
 ---
 - Data Loading for Project 2
 - Querying of Customer Data Subscription Service to gain insights  
@@ -396,19 +410,19 @@ WHERE Canceled= 0;
 - Data Loading
 - Data Visualization
 
-### Data Loading in PowerBI
+### Data Loading in PowerBI Projectt 2
 ---
-The first thing I did on my PowerBI was to load the SalesData Excel Workbook and then check my Column Distribution, Column Profile and Column Quality to make sure my data is clean.
+The first thing I did on my PowerBI was to load the CustomerData Excel Workbook and then check my Column Distribution, Column Profile and Column Quality to make sure my data is clean.
 
-### Data Visualization in PowerBI
+### Data Visualization in PowerBI Project 2
 ---
 Using all the key insights I have gotten from my Microsoft Excel and SQL I then use PowerBI to build my visualization.
 
-![CustomerData1](https://github.com/user-attachments/assets/3d39a2ce-801b-4491-8bd1-d571d8f7a447)
+![CustomerData1](https://github.com/user-attachments/assets/16d3aa25-640c-460d-b98d-4b543a0d54df)
+
 
 ![CustomerData2](https://github.com/user-attachments/assets/946d05c3-0147-466c-a556-0559ce3b8ba9)
 
-### Conclusion
+### Conclusion for Customer Data
 ---
-The insights gained from the CustomerData includes: Total Revenue **149,819,686**, Average Subscription Duraction **365.35**, with the use of *Measure*. By using the Count (Distinct) the total number of Customer was found to be **20** with **11** being an *Activ  With the use of card the total number of customers in the dataset was counted using the *Distinct Count* so it will not count the same CustomerID twice. Also, the Pie Chart shows the percentage of Total Sales by Region where *South* have **44.16%**, *East* - **23.14%**, *North* - **18.42%** and *West* - **14.29%**. The Line Chart shows the Sales Trend from 2023 to 2024 which indicate 2024 sales is lower compare to 2023 sales. We have customer *Cus1488*, *Cus1375*, *Cus1023*, *Cus1059* and *Cus1367* as the Top 5 Customer by Sales. The matrix gives insight to the Top Selling Product *Shoe* with the total sales of **3,087,500**, this also shows clearly in the Bar Chart as Shoes is the highest in the chat. Total Sales of 2024 was represented with column chat based on monthly sales. Finally, slicers for *Product*, *Quarter*, and *Region*  was used to allow user to filter the SalesData easily.  
-
+The insights gained from the CustomerData includes: Total Revenue **149,819,686**, where *South* have **37,580,782**, *West* - **37,482,120**, *East* - **37,387,894** and *North* - ***37, 368,890**. Average Subscription Duraction **365.35**, with the use of *Measure*. By using the Count (Distinct) the total number of Customer was found to be **20** with each Region have the same number of customer **5** each. Based on the dataset *Active Subscriptions* are **41,250** and *Canceled Subscriptions* are **33,750**.  The Most Popular Subscription of them all is *Basic* **50%** of the Subscription while the other two subscription have **25%** each. North, South and West are the region with the most subscription cancellation. These insights will help to make informed decision and help to investigate why some region have higher subscription cancellation and what can be done to improve in the area.
