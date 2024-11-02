@@ -221,7 +221,7 @@ Using all the key insights I have gotten from my Microsoft Excel and SQL I then 
 
 ### Conclusion
 ---
-The dashboard give insight to the Total Sales amount of **10,587,500**, the Average Sales of **211.75** using *Measure* to calculate it. With the use of card the total number of customers in the dataset was counted using the *Distinct Count* so it will not count the same CustomerID twice. Also, the Pie Chart shows the percentage of Total Sales by Region where *South* have **44.16%**, *East* - **23.14%**, *North* - **18.42%** and *West* - **14.29%**. The Line Chart shows the Sales Trend from 2023 to 2024 which indicate 2024 sales is lower compare to 2023 sales. We have customer *Cus1488*, *Cus1375*, *Cus1023*, *Cus1059* and *Cus1367* as the Top 5 Customer by Sales. The matrix gives insight to the Top Selling Product *Shoe* with the total sales of **3,087,500**, this also shows clearly in the Bar Chart as Shoes is the highest in the chat. Total Sales of 2024 was represented with column chat based on monthly sales.
+The dashboard give insight to the Total Sales amount of **10,587,500**, the Average Sales of **211.75** using *Measure* to calculate it. With the use of card the total number of customers in the dataset was counted using the *Distinct Count* so it will not count the same CustomerID twice. Also, the Pie Chart shows the percentage of Total Sales by Region where *South* have **44.16%**, *East* - **23.14%**, *North* - **18.42%** and *West* - **14.29%**. The Line Chart shows the Sales Trend from 2023 to 2024 which indicate 2024 sales is lower compare to 2023 sales. We have customer *Cus1488*, *Cus1375*, *Cus1023*, *Cus1059* and *Cus1367* as the Top 5 Customer by Sales. The matrix gives insight to the Top Selling Product *Shoe* with the total sales of **3,087,500**, this also shows clearly in the Bar Chart as Shoes is the highest in the chat. Total Sales of 2024 was represented with column chat based on monthly sales. Finally, slicers for *Product*, *Quarter*, and *Region*  was used to allow user to filter the SalesData easily. All these insights will help to make informed decision that can increase sales and revenue. 
 
 ---
 
@@ -285,8 +285,8 @@ The CustomerData Excel Worksheet was converted into Comma Seperted Values (CSV) 
 ---
 After loading the Customer Data into the database, I began to write my queries to derive insights into the Dataset. With the use of SQL queries, I was able to extract some key insights from it. The key insights are;
 
-#### Total Number of Customer from each Region
 ---
+#### Total Number of Customer from each Region
 ```SQL
 SELECT Region, COUNT(CustomerID)
 AS Total_Customers
@@ -408,5 +408,7 @@ Using all the key insights I have gotten from my Microsoft Excel and SQL I then 
 
 ![CustomerData2](https://github.com/user-attachments/assets/946d05c3-0147-466c-a556-0559ce3b8ba9)
 
-
+### Conclusion
+---
+The insights gained from the CustomerData includes: Total Revenue **149,819,686**, Average Subscription Duraction **365.35**, with the use of *Measure*. By using the Count (Distinct) the total number of Customer was found to be **20** with **11** being an *Activ  With the use of card the total number of customers in the dataset was counted using the *Distinct Count* so it will not count the same CustomerID twice. Also, the Pie Chart shows the percentage of Total Sales by Region where *South* have **44.16%**, *East* - **23.14%**, *North* - **18.42%** and *West* - **14.29%**. The Line Chart shows the Sales Trend from 2023 to 2024 which indicate 2024 sales is lower compare to 2023 sales. We have customer *Cus1488*, *Cus1375*, *Cus1023*, *Cus1059* and *Cus1367* as the Top 5 Customer by Sales. The matrix gives insight to the Top Selling Product *Shoe* with the total sales of **3,087,500**, this also shows clearly in the Bar Chart as Shoes is the highest in the chat. Total Sales of 2024 was represented with column chat based on monthly sales. Finally, slicers for *Product*, *Quarter*, and *Region*  was used to allow user to filter the SalesData easily.  
 
