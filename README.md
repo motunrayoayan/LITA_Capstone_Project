@@ -55,6 +55,24 @@ I converted my SalesData Excel Worksheet into Comma Seperted Values (CSV) file f
 After loading the Sales Data into my database, I began to write my queries to derive insights into the Dataset. With the use of SQL queries, I was able to extract some key insights from the Sale Data. The insights includes:
 
 ##### Total Sales for each Product Category
+```SQL
+SELECT [Product_Category], SUM([Sales_Amount]) AS Total_Sales
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY [Product_Category]
+ORDER BY [Total_Sales] DESC;
+```
+This is the result of the query
+diagram
+
+##### Count of Customer by Region
+```SQL
+SELECT Region, COUNT(OrderID) AS Transaction_Count
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Region;
+```
+Result
+
+
 
 
 ### POWERBI
