@@ -34,14 +34,14 @@ This is the project given by Ladies in Tech to showcase all we have learnt durin
 
 
 
-### Project Overview 
+### Project Overview
 ---
 The report gives an analysis of Sales Data, using pivot tables and some Excel formulas like SUMIF, AVERAGEIF, MAX, MIN to give key insights. Some of the insights are: Total Sales by Product, Total Sales by Region, Total Sales by Month etc. SQL was also use to derive insights and PowerBI was used for the visualization.
 
 
-### Data Source
+### Data Source 
 ---
-The Primary Source of Data used is SalesData.csv and this data is downloaded from LITA Class LMS page (Canvas).
+The Primary Source of Data used is SalesData.csv and CustomerData.csv which was downloaded from LITA Class LMS page (Canvas).
 
 ### Tools Used
 ---
@@ -67,7 +67,7 @@ The Total Sales by Product summary reveals that the total sales for Shoes for th
 This helps to identify product with the highest sales which in this case is Shoes **3,087,500** and the product that has the lowest sales Socks **912,500**.
 
 ##### Total Sales by Region
-In the sales dataset there are four region, the pivot table summarized total sales providing insights on the following:
+In the sales dataset there are four region, the pivot table summarize total sales providing insights on the following:
 - Region with the Highest Sales which is South with the total sales of **4,675,000**.
 - Region with the Lowest Sales which is West with the Total Sales of **1,512,500**. 
 
@@ -224,50 +224,10 @@ Using all the key insights I have gotten from my Microsoft Excel and SQL I then 
 
 ## PROJECT 2: CUSTOMER SEGMENTATION FOR A SUBSCRIPTION SERVICE
 
-### Table of Content
----
-[Project Overview](#project-overview)
-
-[Data Source](#data-source)
-
-[Tools Used](#tools-used)
-
-[MICROSOFT EXCEL](#microsoft-excel)
-
-[Data Exploration for Excel](#data-exploration-for-excel)
-
-[Data Analysis for Excel](#data-analysis-for-excel)
-
-[STRUCTURED QUERY LANGUAGE](#structured-query-language)
-
-[Creating Database in SQL](#creating-database-in-sql)
-
-[Data Loading in SQL](#data-loading-in-sql)
-
-[Querying of Data to gain insights in SQL](#querying-of-data-to-gain-insights-in-sql)
-
-[POWERBI](#powerbi)
-
-[Data Loading in PowerBI](#data-loading-in-powerbi)
-
-[Data Visualization in PowerBI](#data-visualization-in-powerbi)
-
-
 
 ### Project Overview for Project 2
 ---
 This project involves analyzing customer data for a subscription service to identify segments and trends. The goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The final deliverable is a Power BI dashboard that presents the analysis.
-
-
-### Data Source
----
-The Primary Source of Data used is SalesData.csv and this data is downloaded from LITA Class LMS page (Canvas).
-
-### Tools Used
----
-- Microsoft Excel [View Here](https://1drv.ms/x/c/96d72dbaef9f7a90/Eab1VlHPNP9DuSr3XG7bF3IBPwgnXOxY2mxgcWPM3F_yaA)
-- SQL - Structured Query Language for Query Data
-- PowerBI - For Visualization
 
 ### MICROSOFT EXCEL
 ---
@@ -280,22 +240,22 @@ I went through the data set to make sure there are no missing values or duplicat
 
 #### Data Analysis for Excel
 ---
-Some Excel formulars are used to calculated some values and Pivot Table for summarizing the SaleData. All these were carried out under the following: 
+Some Excel formulars are used to calculated some values and Pivot Table for summarizing the CustomerData. The following insights are derived from the dataset; 
 
-##### Total Sales by Product 
-The Total Sales by Product summary reveals that the total sales for Shoes for the two years is **3,087,500**, total sales for Shirt is **2,450,000**, total sales for Hat is **1,587,000**, total sales for Gloves is **1,500,000**, total sales for Jacket is **1,050,000**, total sales for Socks is **912,500** which gives the Grand Total of **10,587,500**.
-This helps to identify product with the highest sales which in this case is Shoes **3,087,500** and the product that has the lowest sales Socks **912,500**.
+##### Subscription Pattern
+The customer data shows the pattern of subscription which is Basic, Premeium and Standard. Count of CustomerID shows that **Basic Subcription** have **37,500** CustomerID, **Premium Subscription** have **18,750** CustomerID while **Standard Subscription** has **18,750** CustomerID. The **total count** of CustomerID is **75,000**.
 
-##### Total Sales by Region
-In the sales dataset there are four region, the pivot table summarized total sales providing insights on the following:
-- Region with the Highest Sales which is South with the total sales of **4,675,000**.
-- Region with the Lowest Sales which is West with the Total Sales of **1,512,500**. 
+Diagram
 
-##### Total Sales by Month
-This summary is aim at looking at the month with the lowest sales which is December with **250,000** total sales. This summary can help to carry out investigation on why it has the lowest sales and find solution on what can be done to improve sales for the month.
+From the table we can see that **Basic** have the highest count of CustomerID while **Standard** have the lowest count of CustomerID among the SubscriptionType.
 
-![TotalSalesByMonth Pivot](https://github.com/user-attachments/assets/e27eb2be-e6e4-4bbe-a2c6-b7026cb998a9)
+##### Average Subscription Duration
+To find the Average Subscription Duration I substract the SubscriptionStart from the SubscriptionEnd to get the SubscriptionDuration. After which I use the **AVERAGEIF** function and Pivot Table to calculate the Average SubscriptionDuration. The findings shows that Average SubscriptionDuration for **Basic** is **365.3**, **Premium** is **365.4** and **Standaard** is **365.4**. 
+diagram
 
+##### Revenue By Region
+Here I gain insight on the region that bring in the highest Revenue by analyzing the data using the Region and Revenue column. I was able to derive that **South** with the total value **37,580,782** generate the highest revenue out of the four region. 
+diagram
 
 ##### Average Sales by Product
 With the use of Excel Formula AVERAGEIF, I calculated the average sales of each products.
