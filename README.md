@@ -221,8 +221,9 @@ Using all the key insights I have gotten from my Microsoft Excel and SQL I then 
 
 ### Conclusion
 ---
-The dashboard give insight to the Total Sales amount of **10,587,500**, the Average Sales of **211.75** using *Measure* to calculate it. With the use of card the total number of customers in the dataset was counted using the *Distinct Count* so it will not count the same CustomerID twice. Also, the Pie Chart shows the percentage of Total Sales by Region where *South* have **44.16%**, *East* - **23.14%**, *North* - **18.42%** and *West* - **14.29%**. The Line Chart shows the Sales Trend from 2023 to 2024 which indicate 2024 sales is lower compare to 2023 sales. We have customer *Cus1488*, *Cus1375*, *Cus1023*, *Cus1059* and *Cus1367* as the Top 5 Customer by Sales. 
+The dashboard give insight to the Total Sales amount of **10,587,500**, the Average Sales of **211.75** using *Measure* to calculate it. With the use of card the total number of customers in the dataset was counted using the *Distinct Count* so it will not count the same CustomerID twice. Also, the Pie Chart shows the percentage of Total Sales by Region where *South* have **44.16%**, *East* - **23.14%**, *North* - **18.42%** and *West* - **14.29%**. The Line Chart shows the Sales Trend from 2023 to 2024 which indicate 2024 sales is lower compare to 2023 sales. We have customer *Cus1488*, *Cus1375*, *Cus1023*, *Cus1059* and *Cus1367* as the Top 5 Customer by Sales. The matrix gives insight to the Top Selling Product *Shoe* with the total sales of **3,087,500**, this also shows clearly in the Bar Chart as Shoes is the highest in the chat. Total Sales of 2024 was represented with column chat based on monthly sales.
 
+---
 
 ## PROJECT 2: CUSTOMER SEGMENTATION FOR A SUBSCRIPTION SERVICE
 
