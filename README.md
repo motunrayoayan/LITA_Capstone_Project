@@ -6,17 +6,29 @@ This is the project given by Ladies in Tech to showcase all we have learnt durin
 
 ### Table of Content
 [Project Overview](#project-overview)
+
 [Data Source](#data-source)
+
 [Tools Used](#tools-used)
+
 [MICROSOFT EXCEL](#microsoft-excel)
+
 [Data Exploration for Excel](#data-exploration-for-excel)
+
 [Data Analysis for Excel](#data-analysis-for-excel)
+
 [STRUCTURED QUERY LANGUAGE](#structured-query-language)
+
 [Creating Database in SQL](#creating-database-in-sql)
+
 [Data Loading in SQL](#data-loading-in-sql)
+
 [Querying of Data to gain insights in SQL](#querying-of-data-to-gain-insights-in-sql)
+
 [POWERBI](#powerbi)
+
 [Data Loading in PowerBI](#data-loading-in-powerbi)
+
 [Data Visualization in PowerBI](#data-visualization-in-powerbi)
 
 
