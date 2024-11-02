@@ -245,27 +245,29 @@ Some Excel formulars are used to calculated some values and Pivot Table for summ
 ##### Subscription Pattern
 The customer data shows the pattern of subscription which is Basic, Premeium and Standard. Count of CustomerID shows that **Basic Subcription** have **37,500** CustomerID, **Premium Subscription** have **18,750** CustomerID while **Standard Subscription** has **18,750** CustomerID. The **total count** of CustomerID is **75,000**.
 
-Diagram
+![Subscription Pattern](https://github.com/user-attachments/assets/5e42fcba-390f-4dc5-a3de-511b9357721b)
 
 From the table we can see that **Basic** have the highest count of CustomerID while **Standard** have the lowest count of CustomerID among the SubscriptionType.
 
 ##### Average Subscription Duration
 To find the Average Subscription Duration I substract the SubscriptionStart from the SubscriptionEnd to get the SubscriptionDuration. After which I use the **AVERAGEIF** function and Pivot Table to calculate the Average SubscriptionDuration. The findings shows that Average SubscriptionDuration for **Basic** is **365.3**, **Premium** is **365.4** and **Standaard** is **365.4**. 
-diagram
+
+![AverageDuration](https://github.com/user-attachments/assets/b1118aad-0874-4e67-abae-6f6f3d9068e1)
 
 ##### Revenue By Region
 Here I gain insight on the region that bring in the highest Revenue by analyzing the data using the Region and Revenue column. I was able to derive that **South** with the total value **37,580,782** generate the highest revenue out of the four region. 
-diagram
+
+![Revenue by Region](https://github.com/user-attachments/assets/ff77d05e-c829-4222-8d38-9334d4061102)
 
 ##### Most Popular SubscriptionType
 *Basic* is the most popular subscription type as it is the subscription that have the highest *Revenue* **74,756,784** and also the highest Count of *CustomerID* **37,500**
 
-Diagram
+![Most Popular Sub](https://github.com/user-attachments/assets/ce9c2f46-1008-4fc9-a059-15791afb000b)
 
 ##### Subscription Cancelation and Renewal
 Using the Canceled and Revenue column, the analysis shows that we have **82,346,223** renewal while we have **67,473,463** cancelation.   
 
-Diagram
+![Subscription can ren](https://github.com/user-attachments/assets/9931fa2a-8d25-4a6f-b84d-4077c2be56bd)
 
 ### STRUCTURED QUERY LANGUAGE
 ---
@@ -355,7 +357,7 @@ ORDER BY Top3_Canceled_Sub_By_Region DESC;
 ```
 **Result**
 
-Diagram
+![Top 3 canceled](https://github.com/user-attachments/assets/ad5441a0-bd28-45cc-a40c-561ce5d459b5)
 
 ##### Total Number of Canceled Subscriptions
 ```SQL
@@ -392,6 +394,9 @@ The first thing I did on my PowerBI was to load the SalesData Excel Workbook and
 ---
 Using all the key insights I have gotten from my Microsoft Excel and SQL I then use PowerBI to build my visualization.
 
+![CustomerData1](https://github.com/user-attachments/assets/3d39a2ce-801b-4491-8bd1-d571d8f7a447)
+
+![CustomerData2](https://github.com/user-attachments/assets/946d05c3-0147-466c-a556-0559ce3b8ba9)
 
 
 
