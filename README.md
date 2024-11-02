@@ -263,7 +263,7 @@ diagram
 Diagram
 
 ##### Subscription Cancelation and Renewal
-Using the Canceled and Revenue column, the analysis shows that we have 82,346,223 renewal while we have 67,473,463 cancelation.   
+Using the Canceled and Revenue column, the analysis shows that we have **82,346,223** renewal while we have **67,473,463** cancelation.   
 
 Diagram
 
@@ -289,8 +289,7 @@ GROUP BY Region;
 ```
 **Result**
 
-Diagram
-
+![CustomerByRegion](https://github.com/user-attachments/assets/f8a9af4c-bb94-432c-b47b-1d5331bb1165)
 
 ##### Most Popular SubscriptionType by Number of Customer
 ```SQL
@@ -302,7 +301,8 @@ ORDER BY Most_Popular_SubscriptionType DESC;
 ```
 **Result**
 
-Diagram
+![MostPopular Subscription](https://github.com/user-attachments/assets/75e991d2-6d17-4941-a7ae-687717079a42)
+
 
 ##### Customers who Canceled their Subscription within 6 Months
 ```SQL
@@ -313,8 +313,7 @@ WHERE Canceled = 1 AND SubscriptionDuration <=180;
 ```
 **Result**
 
-Diagram
-
+![Canceled Sub 6months](https://github.com/user-attachments/assets/ed177411-fb33-44be-91ef-3d4ebcd40c1e)
 
 ##### Average SubscriptionDuration for all Customers
 ```SQL
@@ -324,7 +323,7 @@ FROM [dbo].[LITA_Capstone_Dataset_CustomerData];
 ```
 **Result**
 
-Diagram
+![AverageSubscription](https://github.com/user-attachments/assets/05dcd972-e0b1-4648-ab5c-86f3c97d38e0)
 
 ##### Customers with Subscription longer than 12 Months
 ```SQL
@@ -334,7 +333,7 @@ WHERE SubscriptionDuration > 365;
 ```
 **Result**
 
-Diagram
+![Subscription longer than 12 months](https://github.com/user-attachments/assets/266f0cd2-bfb9-4623-aae9-d70af216368b)
 
 ##### Total Revenue by SubscriptionType
 ```SQL
@@ -345,7 +344,7 @@ GROUP BY SubscriptionType;
 ```
 **Result**
 
-Diagram
+![SubscriptionType by revenue](https://github.com/user-attachments/assets/9553480f-47d6-4c44-8119-82b5d301c12c)
 
 ##### Top 3 Region by Subscription Cancellation
 ```SQL
@@ -358,14 +357,16 @@ ORDER BY Top3_Canceled_Sub_By_Region DESC;
 
 Diagram
 
-
 ##### Total Number of Canceled Subscriptions
 ```SQL
 SELECT COUNT (*) AS Total_Number_of_Canceled_Subscription
 FROM [dbo].[LITA_Capstone_Dataset_CustomerData] 
 WHERE  Canceled = 1
 ```
-Diagram
+**Result**
+
+![Canceled Subscription](https://github.com/user-attachments/assets/29b73f59-f058-416b-8dfa-587a09507038)
+
 
 ##### Total Number of Active Subscriptions
 ```SQL
@@ -373,7 +374,10 @@ SELECT COUNT (*) AS Total_Number_of_Active_Subscription
 FROM [dbo].[LITA_Capstone_Dataset_CustomerData] 
 WHERE Canceled= 0;
 ```
-Diagram
+**Result**
+
+![Active Subscription](https://github.com/user-attachments/assets/270bb8cd-e906-42c2-812a-b4337414552c)
+
 
 ### POWERBI
 ---
@@ -388,7 +392,6 @@ The first thing I did on my PowerBI was to load the SalesData Excel Workbook and
 ---
 Using all the key insights I have gotten from my Microsoft Excel and SQL I then use PowerBI to build my visualization.
 
-![LITA SalesData1](https://github.com/user-attachments/assets/f5931f7d-1d17-4246-ad7b-91be802b4201)
 
-![LITA SalesData2](https://github.com/user-attachments/assets/eefb5ab0-1dbc-4021-b5b4-ab4418f5bbf8)
+
 
