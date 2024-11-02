@@ -2,8 +2,14 @@
 This is the project given by Ladies in Tech to showcase all we have learnt during the training and to also help use explore.
 
 ## Project 1: SalesData Analysis
+
 ### Project Overview
 The report gives an analysis of Sales Data, using pivot tables and some Excel formulas like SUMIF, AVERAGEIF, MAX, MIN to give key insights. Some of the insights are: Total Sales by Product, Total Sales by Region, Total Sales by Month etc. SQL was also use to derive insights and PowerBI was used for the visualization.
+
+### Tools Used
+- Microsoft Excel [View Here](https://1drv.ms/x/c/96d72dbaef9f7a90/Eab1VlHPNP9DuSr3XG7bF3IBPwgnXOxY2mxgcWPM3F_yaA)
+- SQL - Structured Query Language for Query Data
+- PowerBI - For Visualization
 
 ### EXCEL ANALYSIS
 Using Pivot Table the SalesData was summarized under the following:
@@ -14,8 +20,8 @@ This helps to identify product with the highest sales which in this case is Shoe
 
 #### Total Sales by Region
 In the sales dataset there are four region, the pivot table summarized total sales providing insights on the following:
-The Region with the Highest Sales which is South with the total sales of 4,675,000.
-Also the Region with the Lowest Sales which is West with the Total Sales of 1,512,500. 
+- Region with the Highest Sales which is South with the total sales of 4,675,000.
+- Region with the Lowest Sales which is West with the Total Sales of 1,512,500. 
 
 #### Total Sales by Month
 This summary is aim at looking at the month with the lowest sales which is December with (250,000) total sales. This summary can help to carry out investigation on why it has the lowest sales and find solution on what can be done to improve sales for the month.
