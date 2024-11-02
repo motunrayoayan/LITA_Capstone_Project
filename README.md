@@ -3,8 +3,13 @@ This is the project given by Ladies in Tech to showcase all we have learnt durin
 
 ## PROJECT 1: SALESDATA ANALYSIS
 
+Table of Content
+
 ### Project Overview
 The report gives an analysis of Sales Data, using pivot tables and some Excel formulas like SUMIF, AVERAGEIF, MAX, MIN to give key insights. Some of the insights are: Total Sales by Product, Total Sales by Region, Total Sales by Month etc. SQL was also use to derive insights and PowerBI was used for the visualization.
+
+### Data Source
+The Primary Source of Data used is SalesData.csv and this data is downloaded from LITA Class LMS page (Canvas).
 
 ### Tools Used
 - Microsoft Excel [View Here](https://1drv.ms/x/c/96d72dbaef9f7a90/Eab1VlHPNP9DuSr3XG7bF3IBPwgnXOxY2mxgcWPM3F_yaA)
@@ -52,7 +57,7 @@ The first step I took was to create the Database for my project on SQL Server wh
 I converted my SalesData Excel Worksheet into Comma Seperted Values (CSV) file format, then I load my Sales Data into my database for analysis.
 
 #### Querying of Data to gain insights
-After loading the Sales Data into my database, I began to write my queries to derive insights into the Dataset. With the use of SQL queries, I was able to extract some key insights from the Sale Data. The insights includes:
+After loading the Sales Data into my database, I began to write my queries to derive insights into the Dataset. With the use of SQL queries, I was able to extract some key insights from the Sale Data. The key insights includes:
 
 ##### Total Sales for each Product Category
 ```SQL
@@ -72,8 +77,72 @@ GROUP BY Region;
 ```
 Result
 
+##### Highest Selling Product
+```SQL
+SELECT Top 1 Product_Category, 
+SUM(Sales_Amount) AS Highest_Selling_Product
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Product_Category
+ORDER BY Highest_Selling_Product DESC;
+```
+Result
 
+##### Total Revenue per product
+```SQL
+SELECT Product_Category, SUM(Sales_Amount) 
+AS Total_Revenue
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Product_Category;
+```
+Result
+
+##### Monthly Sales Total for Current Year
+```SQL
+SELECT	MONTH([OrderDate]) AS SalesMonth,
+SUM([Sales_Amount]) AS MonthlyTotal
+FROM [dbo].[LITA Capstone Dataset]
+WHERE YEAR(OrderDate) = YEAR(GETDATE())  -- Current year
+GROUP BY MONTH(OrderDate)
+ORDER BY SalesMonth ASC;
+```
+Result
+
+##### Top 5 Customers by Total Purchase
+```SQL
+SELECT Top 5 Customer_Id, SUM(Sales_Amount)
+AS Total_Purchase
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Customer_Id
+ORDER BY Total_Purchase DESC;
+```
+Result
+
+##### Percentage of Total Sales by Region
+```SQL
+SELECT Region, (SUM(Sales_Amount) * 100.0 / 
+(SELECT SUM(Sales_Amount)FROM [dbo].[LITA Capstone Dataset])) AS Percentage_of_Total_Sales
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Region;
+```
+Result
+
+##### Product with no Sales in Last Quarter
+```SQL
+SELECT Product_Category
+FROM [dbo].[LITA Capstone Dataset]
+WHERE OrderDate < DATEADD(QUARTER, -1, GETDATE())
+GROUP BY Product_Category
+HAVING SUM(Sales_Amount) = 0;
+```
+Result
 
 
 ### POWERBI
-- 
+- Data Loading
+- Data Visualization
+
+#### Data Loading
+The first thing I did on my PowerBI was to load the SalesData Excel Workbook and then check my Column Distribution, Column Profile and Column Quality to make sure my data is clean.
+
+#### Data Visualization
+
