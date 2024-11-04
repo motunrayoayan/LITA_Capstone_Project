@@ -70,7 +70,7 @@ The Primary Source of Data used is SalesData.csv and CustomerData.csv which was 
 
 ### Data Exploration for Excel
 ---
-I went through the data set to make sure there are no missing values or duplicated values.
+I went through the data set inorder to check for missing values or duplicated values.
 
 ### Data Analysis for Excel 
 ---
